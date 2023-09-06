@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:all .2s linear;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Starts Here */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: black;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    z-index: 999999;
+}
+
+header h1{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header .nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 680px;
+}
+
+header .nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+    justify-content: space-between;
+    }
+    header .nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        justify-content: space-between;
+    }
+    header .nav ul li::after{
+       content: '';
+       width: 0%;
+       height: 2px;
+       background: #fff;
+       border-radius: 50px;
+       display: block; 
+       margin: auto;
+       transition: 0.5s;
+    }
+    header .nav ul li:hover::after{
+        width: 100%;
+    }
+
+/* Navbar Ends Here */
+
+
+/* Header Container Starts Here */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.left-container h1{
+    font-size: 2.5rem;
+}
+
+.left-container p{
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.left-container a{
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.4s;
+    border: 1.5px solid black;
+    text-align: center;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.left-container a:hover{
+    background: transparent;
+    color: black;
+    transition: all ease-in-out 0.4s;
+}
+
+
+.right-container{
+    width: 600px;
+    margin-left: 100px;
+}
+
+.right-container img{
+    width: 100%;
+}
+/* Header Container Starts Here */
+
+.long-line{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.473);
+    padding: 0.1px;
+}
+
+/* About Us Section Starts Here */
+section{
+    margin-top: 20px;
+}
+
+.about-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title h1{
+    font-size: 1.8rem;
+}
+
+.about-title .line{
+    padding: 3px;
+    border-radius: 4px;
+    background: black;
+    width: 6%;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.about-left{
+    width: 500px;
+}
+
+.about-left img{
+    width: 100%;
+}
+
+.about-right{
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+.about-right h1{
+    font-size: 2rem;
+}
+
+.about-right p{
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-right a{
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+    border: 1.5px solid black;
+    width: 30%;
+}
+
+.about-right a:hover{
+    background: transparent;
+    color: black;
+    transition: all ease-in-out 0.4s;
+}
+/* About Us Section Ends Here */
+
+/* Soundmix Section Starts Here */
+.soundmix-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soundmix-title h1{
+    font-size: 1.8rem;
+}
+
+.soundmix-title .line{
+    padding: 3px;
+    border-radius: 4px;
+    background: black;
+    width: 4%;
+}
+
+.soundmix-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.soundmix-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    width: 380px;
+    height: 290px;
+    border-radius: 15px;
+    margin: 1.1%;
+}
+
+.soundmix-card img{
+    width: 30%;
+    margin-top: 20px;
+}
+
+.soundmix-card h1{
+    margin-top: 20px;
+}
+
+.soundmix-card audio{
+    margin-top: 30px;
+}
+
+/* Soundmix Section Ends Here */
+
+/* Contact Us Section Starts Here */
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1{
+    font-size: 1.8rem;
+}
+
+.contact-title .line{
+    padding: 3px;
+    border-radius: 4px;
+    background: black;
+    width: 4%;
+}
+
+.contact-container{
+    margin-top: 10px;
+}
+
+::placeholder{
+    color: black;
+}
+
+.contact-container form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.contact-container form label{
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.contact-container form input{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+}
+
+.contact-container form textarea{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.contact-container form button{
+    padding: 12px;
+    margin-top: 10px;
+    background: black;
+    color: #fff;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    transition: all ease-in-out 0.4s;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.contact-container form button:hover{
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+
+/* Contact Us Section Ends Here */
+
+/* Footer Starts Here */
+footer{
+    margin-top: 20px;
+    padding: 15px;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.1rem;
+}
+
+footer a{
+    color: #fff;
+}
+/* Footer Ends Here */
+
+
+/* Responsive Starts Here */
+@media only screen and (max-width: 390px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        background: black;
+        color: #fff;
+        padding: 15px;
+        position: fixed;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        z-index: 999999;
+    }
+
+    header h1{
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        margin-left: 0px;
+    }
+
+    header .nav{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 8px;
+    }
+
+    header .nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    header .nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+        justify-content: space-between;
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .left-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+        margin-left: 50px;
+        width: 600px;
+    }
+
+    .left-container p{
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .left-container a{
+        text-decoration: none;
+        color: #fff;
+        background: black;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.4s;
+        border: 1.5px solid black;
+        text-align: center;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .right-container{
+        width: 1000px;
+        margin-left: -300px;
+    }
+
+    .about-title .line{
+        padding: 3px;
+        border-radius: 4px;
+        background: black;
+        width: 15%;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    .about-left{
+        width: 380px;
+        margin-left: -10px;
+    }
+
+    .about-right{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .about-right h1{
+        font-size: 1.5rem;
+    }
+
+    .about-right p{
+        margin-top: 5px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .about-right a{
+        text-decoration: none;
+        background: black;
+        color: #fff;
+        padding: 8px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.4s;
+        cursor: pointer;
+        border: 1.5px solid black;
+        width: 30%;
+    }
+
+    .soundmix-title .line{
+        padding: 3px;
+        border-radius: 4px;
+        background: black;
+        width: 15%;
+    }
+
+    .contact-title .line{
+        padding: 3px;
+        border-radius: 4px;
+        background: black;
+        width: 15%;
+    }
+
+    .contact-container form{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+/* Responsive Ends Here */
