@@ -126,16 +126,16 @@
             <div class="contact-container">
                 <form action="mailto:allancorp250@gmail.com" method="post">
                     <label>Name:</label>
-                    <input type="text" placeholder="Enter Your Name..." required>
+                    <input type="text" name="name" placeholder="Enter Your Name..." required>
 
                     <label>Email:</label>
-                    <input type="email" placeholder="Enter Your Email..." required>
+                    <input type="email" name="email" placeholder="Enter Your Email..." pattern="[^ @]*@[^ @]*" required>
 
                     <label>Subject:</label>
-                    <input type="text" placeholder="Enter Your Subject..." required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject..." required>
 
                     <label>Message:</label>
-                    <textarea cols="30" rows="10" placeholder="Enter Your Message..." required></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter Your Message..." required></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
