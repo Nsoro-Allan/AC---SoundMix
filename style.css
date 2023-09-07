@@ -115,7 +115,7 @@ header .nav ul li{
     border: 1.5px solid black;
     text-align: center;
     width: 30%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .left-container a:hover{
@@ -128,6 +128,7 @@ header .nav ul li{
 .right-container{
     width: 600px;
     margin-left: 100px;
+    margin-top: 50px;
 }
 
 .right-container img{
@@ -171,7 +172,7 @@ section{
 }
 
 .about-left{
-    width: 500px;
+    width: 600px;
 }
 
 .about-left img{
@@ -180,7 +181,7 @@ section{
 
 .about-right{
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 .about-right h1{
