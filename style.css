@@ -47,7 +47,6 @@ header h1 a{
 header .nav{
     display: flex;
     justify-content: flex-end;
-    /* padding-left: 680px; */
 }
 
 header .nav ul li{
