@@ -234,6 +234,8 @@ section{
 .soundmix-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 15px;
     margin-top: 10px;
@@ -243,6 +245,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
     width: 380px;
     height: 290px;
@@ -260,7 +263,9 @@ section{
 }
 
 .soundmix-card audio{
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
 }
 
 /* Soundmix Section Ends Here */
