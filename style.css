@@ -23,6 +23,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     background: black;
     color: #fff;
@@ -46,7 +47,7 @@ header h1 a{
 header .nav{
     display: flex;
     justify-content: flex-end;
-    padding-left: 680px;
+    /* padding-left: 680px; */
 }
 
 header .nav ul li{
