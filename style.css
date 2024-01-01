@@ -265,7 +265,7 @@ section{
 .soundmix-card audio{
     margin-top: 25px;
     margin-bottom: 20px;
-
+    outline: none;
 }
 
 /* Soundmix Section Ends Here */

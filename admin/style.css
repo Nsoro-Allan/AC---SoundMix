@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:all .2s linear;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #fff;
+    height: 450px;
+    width: 850px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.233);
+}
+
+.left{
+    width: 68%;
+}
+
+.left img{
+    width: 100%;
+    height: 400px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    padding: 3px;
+    border-radius: 4px;
+    background: black;
+    width: 35%;
+    margin-top: 5px;
+}
+
+label{
+    margin-top: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+}
+
+input{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1.1px solid black;
+    width: 90%;
+    outline-color: rgba(0, 0, 0, 0.505);
+}
+
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.826);
+}
+
+button{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.849);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    width: 90%;
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+button:hover{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.785);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.middle-main-container{
+    padding: 10px;
+    margin-left: 0.1%;
+    width: 190vh;
+}
+
+.soundmix-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soundmix-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.soundmix-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.233);
+    padding: 15px;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+ }
+ 
+ .soundmix-container form input{
+     border-radius:4px;
+     width: 100%;
+     padding: 10px;
+ }
+
+::placeholder{
+    color: black;
+}
+
+.soundmix-container form button{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.849);
+    padding: 13px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+.soundmix-container form button:hover{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.785);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.soundmix-title .line{
+    padding: 3px;
+    background: black;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 30%;
+}
+
+.soundmix-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.soundmix-left{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.233);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin: 3%;
+}
+
+.soundmix-left h1{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.soundmix-right{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.233);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    margin: 3%;
+}
+
+.soundmix-right h1{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.soundmix-total-number{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background:#d1d0d09e;
+    font-size: 0.8rem;
+}
+
+.soundmix-total-number a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.soundmix-total-number:hover{
+    background:#b1b1b1;
+    cursor: pointer;
+}
+
+
+
