@@ -9,9 +9,11 @@ $id = $_GET['id'];
 if(isset($_POST['submit'])){
 $soundmix_name=mysqli_real_escape_string($con, $_POST['soundmix_name']);
 $soundmix_audio=$_POST['soundmix_audio'];
+$soundmix_category=mysqli_real_escape_string($con, $_POST['soundmix_category']);
 
 
-$sql = "UPDATE `soundmixes` SET `soundmix_name`='$soundmix_name',`soundmix_audio`='$soundmix_audio'WHERE id=$id";
+
+$sql = "UPDATE `soundmixes` SET `soundmix_name`='$soundmix_name',`soundmix_audio`='$soundmix_audio', `soundmix_category`='$soundmix_category' WHERE id=$id";
 
 $result = mysqli_query($con, $sql);
 
@@ -65,7 +67,25 @@ include("header.php");
             <input type="file" name="soundmix_audio">
 
             <label>Current SoundMix Audio:</label>
-            <audio src="uploads/<?php echo $row['soundmix_audio']?>" accept="audio/*" style="margin-top:10px;" controls></audio>
+            <audio name="soundmix_audio" src="uploads/<?php echo $row['soundmix_audio']?>" accept="audio/*" style="margin-top:10px;" controls></audio>
+
+            <label>Current SoundMix Category:</label>
+            <input type="text" value="<?php echo $row['soundmix_category'];?>" readonly>
+
+            <label>New SoundMix Category:</label>
+            <select name="soundmix_category">
+
+            <option value="<?php echo $row['soundmix_category'];?>">Select your soundmix category...</option>
+
+            <option value="trap">Trap</option>
+
+            <option value="drill">Drill</option>
+
+            <option value="afrobeat">Afrobeat</option>
+
+            <option value="pop">Pop</option>
+
+            </select>
 
             <button type="submit" name="submit">Update SoundMix</button>
         </form>

@@ -88,6 +88,7 @@ include("connection.php");
                     <th>#</th>
                     <th>SoundMix Name</th>
                     <th>Soundmix Audio</th>
+                    <th>Soundmix Category</th>
                     <th>Actions</th>
                 </tr>
 
@@ -107,6 +108,8 @@ include("connection.php");
                 <td>
                     <audio src="uploads/<?php echo $row['soundmix_audio']; ?>" controls ></audio>
                 </td>
+
+                <td><?php echo $row['soundmix_category']; ?></td>
 
                 <td>
                 <a href="edit_soundmix.php?id=<?php echo $row['id']?>">Edit</a><br><br>
