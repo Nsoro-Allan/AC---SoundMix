@@ -104,7 +104,9 @@ include("connection.php");
 
                 <td><?php echo $row['soundmix_name']; ?></td>
 
-                <td><?php echo $row['soundmix_audio']; ?></td>
+                <td>
+                    <audio src="uploads/<?php echo $row['soundmix_audio']; ?>" controls ></audio>
+                </td>
 
                 <td>
                 <a href="edit_soundmix.php?id=<?php echo $row['id']?>">Edit</a><br><br>

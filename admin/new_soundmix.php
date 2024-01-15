@@ -5,7 +5,6 @@ include("connection.php");
 
 if (isset($_POST['submit'])) {
     $soundmix_name = mysqli_real_escape_string($con, $_POST['soundmix_name']);
-
     $soundmix_category = mysqli_real_escape_string($con, $_POST['soundmix_category']);
 
     // File Upload Logic
@@ -15,7 +14,7 @@ if (isset($_POST['submit'])) {
     $upload_success = move_uploaded_file($_FILES['soundmix_audio']['tmp_name'], $target_path);
 
     if ($upload_success) {
-        $query = "INSERT INTO soundmixes (soundmix_name, soundmix_audio, soundmix_category) VALUES ('', '$soundmix_name', '$soundmix_audio', '$soundmix_category')";
+        $query = "INSERT INTO soundmixes (soundmix_name, soundmix_audio, soundmix_category) VALUES ('$soundmix_name', '$soundmix_audio', '$soundmix_category')";
         $result = $con->query($query);
 
         if ($result) {
@@ -29,6 +28,7 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+
 
 
 <!DOCTYPE html>
