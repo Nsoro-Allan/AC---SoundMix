@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2023 at 09:16 PM
+-- Generation Time: Jan 15, 2024 at 10:34 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -54,13 +54,6 @@ CREATE TABLE `contacts` (
   `message` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `contacts`
---
-
-INSERT INTO `contacts` (`id`, `name`, `email`, `subject`, `message`) VALUES
-(2, 'Nsoro Allan', 'nsoroallan@gmail.com', 'soundmixes', 'Nice Soundmixes keep up the good work');
-
 -- --------------------------------------------------------
 
 --
@@ -70,20 +63,9 @@ INSERT INTO `contacts` (`id`, `name`, `email`, `subject`, `message`) VALUES
 CREATE TABLE `soundmixes` (
   `id` int(11) NOT NULL,
   `soundmix_name` varchar(100) NOT NULL,
-  `soundmix_audio` varchar(100) NOT NULL
+  `soundmix_audio` varchar(100) NOT NULL,
+  `soundmix_category` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `soundmixes`
---
-
-INSERT INTO `soundmixes` (`id`, `soundmix_name`, `soundmix_audio`) VALUES
-(1, 'SoundMix 1', 'Audio (1).mpeg'),
-(2, 'SoundMix 2', 'Audio (2).mpeg'),
-(3, 'SoundMix 3', 'Audio (3).mp3'),
-(4, 'SoundMix 4', 'Audio (4).mp3'),
-(5, 'SoundMix 5', 'Audio (5).mp3'),
-(6, 'SoundMix 6', 'Audio (6).mp3');
 
 --
 -- Indexes for dumped tables
@@ -121,13 +103,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `soundmixes`
 --
 ALTER TABLE `soundmixes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
