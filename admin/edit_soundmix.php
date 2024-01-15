@@ -65,7 +65,7 @@ include("header.php");
             <input type="file" name="soundmix_audio">
 
             <label>Current SoundMix Audio:</label>
-            <audio src="uploads/<?php echo $row['soundmix_audio']?>" style="margin-top:10px;" controls></audio>
+            <audio src="uploads/<?php echo $row['soundmix_audio']?>" accept="audio/*" style="margin-top:10px;" controls></audio>
 
             <button type="submit" name="submit">Update SoundMix</button>
         </form>
