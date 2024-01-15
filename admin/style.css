@@ -79,7 +79,7 @@ label{
     text-align: left;
 }
 
-input{
+input,select{
     margin-top: 10px;
     padding: 10px;
     border-radius: 4px;
@@ -146,7 +146,7 @@ button:hover{
     margin-top: 30px;
  }
  
- .soundmix-container form input{
+ .soundmix-container form input,select{
      border-radius:4px;
      width: 100%;
      padding: 10px;
