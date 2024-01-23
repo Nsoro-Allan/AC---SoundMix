@@ -11,7 +11,7 @@
         background:black;
         color:#fff;
         align-items:center;
-        width:200px;
+        width:210px;
         height:100vh;
     }
 
@@ -44,6 +44,7 @@
         display:flex;
         flex-direction:column;
         margin-top:-50px;
+        margin-left:20px;
     }
 
     .link{
