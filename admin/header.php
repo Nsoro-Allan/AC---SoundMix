@@ -13,6 +13,8 @@
         align-items:center;
         width:210px;
         height:100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .title{
@@ -43,7 +45,7 @@
     .links{
         display:flex;
         flex-direction:column;
-        margin-top:-50px;
+        margin-top: -15px;
         margin-left:20px;
     }
 

@@ -62,8 +62,8 @@ CREATE TABLE `contacts` (
 
 CREATE TABLE `soundmixes` (
   `id` int(11) NOT NULL,
-  `soundmix_name` varchar(100) NOT NULL,
-  `soundmix_audio` varchar(100) NOT NULL,
+  `soundmix_name` varchar(200) NOT NULL,
+  `soundmix_audio` varchar(500) NOT NULL,
   `soundmix_category` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
