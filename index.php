@@ -96,12 +96,19 @@ if(isset($_POST['submit'])){
                 <div class="line"></div>
             </div>
 
+            <!-- Pop Soundmixes start here -->
+
+            <div class="soundmix-title" style="margin-top:5%;">
+                <h1>Pop SoundMixes</h1>
+                <div class="line"></div>
+            </div>
+
             <div class="soundmix-container">
 
             <?php
 
             // Retrieve room information from database
-            $sql = "SELECT soundmix_name, soundmix_audio FROM soundmixes";
+            $sql = "SELECT soundmix_name, soundmix_audio FROM soundmixes WHERE soundmix_category='pop'";
             $result = mysqli_query($con, $sql);
 
             while ($row = mysqli_fetch_assoc($result)) {
@@ -122,6 +129,80 @@ if(isset($_POST['submit'])){
 
             
             </div>
+            <!-- Pop Soundmixes end here -->
+
+
+            <!-- Drill Soundmixes start here -->
+
+            <div class="soundmix-title" style="margin-top:5%;">
+                <h1>Drill SoundMixes</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="soundmix-container">
+
+            <?php
+
+            // Retrieve room information from database
+            $sql = "SELECT soundmix_name, soundmix_audio FROM soundmixes WHERE soundmix_category='drill'";
+            $result = mysqli_query($con, $sql);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                $soundmix_name = $row['soundmix_name'];
+                $soundmix_audio = $row['soundmix_audio'];
+
+                echo'
+                <div class="soundmix-card">
+                    <img src="./imgs/icon.png" alt="">
+                    <h1>' . $soundmix_name . '</h1>
+                    <audio src="./admin/uploads/' . $soundmix_audio . '" controls></audio>
+                </div>
+
+                ';
+
+            }
+            ?> 
+
+            
+            </div>
+            <!-- Drill Soundmixes end here -->
+
+            <!-- Trap Soundmixes start here -->
+
+            <div class="soundmix-title" style="margin-top:5%;">
+                <h1>Trap SoundMixes</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="soundmix-container">
+
+            <?php
+
+            // Retrieve room information from database
+            $sql = "SELECT soundmix_name, soundmix_audio FROM soundmixes WHERE soundmix_category='trap'";
+            $result = mysqli_query($con, $sql);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                $soundmix_name = $row['soundmix_name'];
+                $soundmix_audio = $row['soundmix_audio'];
+
+                echo'
+                <div class="soundmix-card">
+                    <img src="./imgs/icon.png" alt="">
+                    <h1>' . $soundmix_name . '</h1>
+                    <audio src="./admin/uploads/' . $soundmix_audio . '" controls></audio>
+                </div>
+
+                ';
+
+            }
+            ?> 
+
+            
+            </div>
+            <!-- Drill Soundmixes end here -->
+
+
         </section>
         <!-- Soundmix Section Ends Here -->
 
