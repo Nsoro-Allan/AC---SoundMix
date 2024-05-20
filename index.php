@@ -266,7 +266,7 @@ if(isset($_POST['submit'])){
 
         <!-- Footer Starts Here -->
         <footer>
-            <p>All Rights Reserved &copy; <a href="https://allancorp.netlify.app">AllanCorp</a> - 2023</p>
+            <p>All Rights Reserved &copy; <a href="https://allancorp.netlify.app">AllanCorp</a> - 2024</p>
         </footer>
         <!-- Footer Ends Here -->
     </div>
