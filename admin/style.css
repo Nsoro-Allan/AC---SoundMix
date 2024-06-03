@@ -17,6 +17,10 @@ body{
     flex-direction: row;
 }
 
+img{
+    -webkit-user-drag: none;
+}
+
 .container{
     display: flex;
     flex-direction: row;
