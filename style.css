@@ -17,6 +17,10 @@ html{
     flex-direction: column;
 }
 
+img{
+    -webkit-user-drag: none;
+}
+
 /* Navbar Starts Here */
 
 header{
