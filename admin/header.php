@@ -11,7 +11,7 @@
         background:black;
         color:#fff;
         align-items:center;
-        width:210px;
+        width:260px;
         height:100vh;
         overflow-y: auto;
         overflow-x: hidden;
@@ -119,7 +119,7 @@
     <div class="main-container">
        <header>
             <div class="title">
-            <h1><a href="./Dashboard.php">AC - SoundMix</a></h1>
+            <h1><a href="./Dashboard.php">SoundMix - Hub</a></h1>
             <div class="line"></div>
             </div>
 

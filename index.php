@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC - SoundMix</title>
+    <title>SoundMix - Hub</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
 </head>
@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
         
         <!-- Navbar Starts Here -->
         <header>
-            <h1><a href="./home">AC - SoundMix</a></h1>
+            <h1><a href="./home">SoundMix - Hub</a></h1>
 
         <div class="nav">
         <ul>

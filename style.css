@@ -86,15 +86,18 @@ header .nav ul li{
 .header-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 15px;
-    margin-top: 124px;
+    width: 100%;
+    height: 100dvh;
+    gap: 30px;
 }
 
 .left-container{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    margin-left: 50px;
+    width: 50%;
 }
 
 .left-container h1{
@@ -129,8 +132,7 @@ header .nav ul li{
 
 
 .right-container{
-    width: 800px;
-    margin-left: 70px;
+    width: 50%;
 }
 
 .right-container img{
